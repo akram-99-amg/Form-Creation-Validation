@@ -16,7 +16,8 @@ async function fetchUserData() {
         });
         dataContainer.appendChild(userList)
     } catch (error) {
-        dataContainer.innerHTML = "failed to load user data."
+        dataContainer.innerHTML = "";
+        dataContainer.textContent="Failed to load user data."
     }
 }
 
